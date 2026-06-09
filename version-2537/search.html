@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 日韩电视剧在线</title>
+  <meta name="description" content="搜索日韩电视剧、韩剧、日剧、泰剧和高清影视内容，支持片名、地区、年份、类型和标签筛选。">
+  <meta name="keywords" content="日韩电视剧,韩剧在线观看,日剧免费,高清电视剧,追剧,免费影视,搜索,筛选">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-wrap">
+    <a class="brand" href="./index.html" aria-label="日韩电视剧在线">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">日韩电视剧在线</span>
+    </a>
+    <div class="desktop-nav">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./category-japan-korea.html">日韩专区</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+    </div>
+    <form class="search-form" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+  </nav>
+  <div class="mobile-panel" hidden>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <a class="mobile-link" href="./index.html">首页</a>
+    <a class="mobile-link" href="./categories.html">分类</a>
+    <a class="mobile-link" href="./category-japan-korea.html">日韩专区</a>
+    <a class="mobile-link" href="./ranking.html">排行榜</a>
+    <a class="mobile-link" href="./search.html">搜索</a>
+  </div>
+</header>
+<main>
+
+<section class="page-hero container search-hero">
+  <span>Search</span>
+  <h1>搜索与筛选</h1>
+  <p>输入片名、地区、年份、类型或标签，快速找到想看的日韩电视剧与高清影视内容。</p>
+</section>
+<section class="content-section container search-panel-section">
+  <div class="search-panel">
+    <form id="site-search-form" class="big-search" action="./search.html" method="get">
+      <input id="site-search-input" type="search" name="q" placeholder="输入影片名称、地区或标签" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="filter-row">
+      <select id="filter-region" aria-label="地区筛选">
+        <option value="">全部地区</option>
+      </select>
+      <select id="filter-year" aria-label="年份筛选">
+        <option value="">全部年份</option>
+      </select>
+      <select id="filter-type" aria-label="类型筛选">
+        <option value="">全部类型</option>
+      </select>
+    </div>
+  </div>
+  <div id="search-status" class="search-status">输入关键词或选择筛选条件开始浏览</div>
+  <div id="search-results" class="card-grid four-cols search-results"></div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-mark">▶</span>
+      <strong>日韩电视剧在线</strong>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+    <p>© 2026 日韩电视剧在线 · 高清不卡，畅享热门影视内容</p>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="./assets/search-index.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
